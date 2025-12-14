@@ -17,7 +17,7 @@ func main() {
 
 	log := setupLogger(cfg.Env)
 
-	log.Info("starting Notify Api")
+	log.Info("starting Notify Api", slog.String("env", cfg.Env))
 	log.Debug("debug message are enabled")
 
 }
